@@ -1,0 +1,20 @@
+SELECT
+    PassengerId,
+    Survived,
+    Pclass,
+FROM titanic;
+
+
+SELECT *
+FROM titanic
+WHERE Age < 18;
+
+
+SELECT Name, Age, Fare
+FROM titanic
+ORDER BY Fare DESC;
+
+SELECT
+    *,
+    (SibSp + Parch + 1) AS FamilySize
+FROM titanic;
